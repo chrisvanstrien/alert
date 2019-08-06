@@ -39,8 +39,8 @@ function init() {
 	skeletonRenderer = new spine.webgl.SkeletonRenderer(gl);
 	assetManager = new spine.webgl.AssetManager(gl);
 
-	assetManager.loadText("goblins-pro.json");
-	assetManager.loadTextureAtlas("goblins-pma.atlas");
+	assetManager.loadText("/goblins-pro.json");
+	assetManager.loadTextureAtlas("/goblins-pma.atlas");
 	
 	requestAnimationFrame(load);
 }
@@ -57,10 +57,10 @@ function load() {
 function loadSkeleton(initialAnimation, skin) {
 	if (skin === undefined) skin = "default";
 
-	var atlas = assetManager.get("goblins-pma.atlas");
+	var atlas = assetManager.get("/goblins-pma.atlas");
 	var atlasLoader = new spine.AtlasAttachmentLoader(atlas);
 	var skeletonJson = new spine.SkeletonJson(atlasLoader);
-	var skeletonData = skeletonJson.readSkeletonData(assetManager.get("goblins-pro.json"));
+	var skeletonData = skeletonJson.readSkeletonData(assetManager.get("/goblins-pro.json"));
 	var skeleton = new spine.Skeleton(skeletonData);
 	
 	skeleton.setSkinByName(skin);
