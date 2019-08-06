@@ -208,10 +208,26 @@ function closeEyesAndMouth() {
 }
 
 function randomizeColors() {
-	
 	// have some colors more rare than others
-	// set nose patch visibility here, randomize non-fur
 	// have some variance in fur colors
+	
+	var leafColors = [
+		{r:99/255, g:207/255, b:28/255, a:1}, // green
+		{r:242/255, g:121/255, b:23/255, a:1} // orange
+	];
+	
+	var neckColors = [
+		{r:55/255, g:54/255, b:61/255, a:1}, // black
+		{r:194/255, g:29/255, b:21/255, a:1}, // red
+		{r:88/255, g:183/255, b:238/255, a:1}, // blue
+		{r:99/255, g:207/255, b:28/255, a:1}, // green
+		{r:134/255, g:82/255, b:47/255, a:1} // brown
+	];
+	
+	var tagColors = [
+		{r:134/255, g:82/255, b:47/255, a:1}, // gold
+		{r:217/255, g:229/255, b:237/255, a:1} // silver
+	];
 	
 	var furPalettes = [
 		{primary:{r:244/255, g:198/255, b:120/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}, detail:{r:0/255, g:0/255, b:0/255, a:1}},
@@ -245,9 +261,20 @@ function randomizeColors() {
 		]
 	}
 	
-	var furPaletteIndex = Math.floor(Math.random() * 4); 
+	var leafPaletteIndex = Math.floor(Math.random() * 2);
+	mainSkeleton.skeleton.findSlot("leaf color").color = leafColors[leafPaletteIndex];
 	
+	var neckPaletteIndex = Math.floor(Math.random() * 5);
+	mainSkeleton.skeleton.findSlot("collar color").color = neckColors[neckPaletteIndex];
+	mainSkeleton.skeleton.findSlot("bandana color").color = neckColors[neckPaletteIndex];
+	
+	var tagPaletteIndex = Math.floor(Math.random() * 2); 
+	mainSkeleton.skeleton.findSlot("tag color").color = tagColors[tagPaletteIndex];
+
+	var furPaletteIndex = Math.floor(Math.random() * 4); 
 	slotOn("nose patch", furPaletteIndex == 1 || furPaletteIndex == 2);
+	
+	mainSkeleton.skeleton.findSlot("nose patch").color = furPalettes[furPaletteIndex].detail;
 	
 	furSlots.primary.forEach(function(element) {
 		mainSkeleton.skeleton.findSlot(element).color = furPalettes[furPaletteIndex].primary;
