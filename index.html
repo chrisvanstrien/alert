@@ -110,6 +110,7 @@ function animationEvent(name) { // "still" is actually just whenever the dogs ey
 	// iterate KEYs in this DICT:
 	// skeleton.findSlot("KEY").setAttachment(DICT[KEY][name == RISING ? 0 : 1]) //just set attachment with first arg slot name?
 	
+	// check for one?
 	applyRandomizedSlots();
 }
 
@@ -180,11 +181,9 @@ function storeRandomizeSlots() {
 }
 
 function applyRandomizedSlots() {
-	//Object.keys(randomSlots).forEach(function(key) {
-		//slotOn(key, randomSlots[key]);
-	//});
-	
-	//slotOn("leaf color", true);
+	Object.keys(randomSlots).forEach(function(key) {
+		slotOn(key, randomSlots[key]);
+	});
 }
 
 function closeEyesAndMouth() {
@@ -194,7 +193,6 @@ function closeEyesAndMouth() {
 	slotOn("normal eyes glow", false);
 	
 	slotOn("close eyes color", true);
-	//mainSkeleton.skeleton.findSlot("close eyes color").setAttachment("close eyes color");
 	
 	
 	slotOn("open mouth tounge", false);
@@ -204,7 +202,6 @@ function closeEyesAndMouth() {
 	slotOn("open mouth color", false);
 
 	slotOn("closed mouth outline", true);
-	//mainSkeleton.skeleton.findSlot("closed mouth outline").setAttachment("closed mouth outline");
 }
 
 function randomizeColors() { // set nose patch visibility here, randomize non-fur
@@ -249,8 +246,6 @@ function randomizeColors() { // set nose patch visibility here, randomize non-fu
 	furSlots.secondary.forEach(function(element) {
 		mainSkeleton.skeleton.findSlot(element).color = furPalettes[furPaletteIndex].secondary;
 	});
-	
-	// call on animation start
 }
 
 function slotOn(slot, on) {
