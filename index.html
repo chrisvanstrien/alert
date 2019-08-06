@@ -184,6 +184,8 @@ function applyRandomizedSlots() {
 		console.log(key +""+ randomSlots[key]);
 		slotOn(key, randomSlots[key]);
 	});
+	
+	slotOn("leaf color", true);
 }
 
 function closeEyesAndMouth() {
@@ -251,7 +253,7 @@ function randomizeColors() { // set nose patch visibility here, randomize non-fu
 }
 
 function slotOn(slot, on) {
-	mainSkeleton.skeleton.findSlot(slot).setAttachment(on == true ? slot : null);
+	mainSkeleton.skeleton.findSlot(slot).setAttachment(on ? slot : null);
 }
 
 function calculateBounds(skeleton) {
