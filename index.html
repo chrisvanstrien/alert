@@ -73,13 +73,11 @@ function loadSkeleton(initialAnimation, skin) {
 	animationState.setAnimation(0, initialAnimation, true); // true is loop
 
 	animationState.addListener({
-		start: function(track) {
-			randomizeColors();
-		},
+		start: function(track) {},
 		interrupt: function(track) {},
 		end: function(track) {},
 		disposed: function(track) {},
-		complete: function(track) {},
+		complete: function(track) {randomizeColors();},
 		event: function(track, event) {
 			animationEvent(event.name);
 		}
@@ -138,7 +136,6 @@ function randomizeColors() {
 	
 	var furPaletteIndex = Math.floor(Math.random() * 4); 
 	
-	// cant use attachment, because it might be swapped out?
 	furSlots.primary.forEach(function(element) {
 		mainSkeleton.skeleton.findSlot(element).color = furPalettes[furPaletteIndex].primary;
 	});
