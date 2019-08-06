@@ -1,0 +1,384 @@
+{
+"skeleton": { "hash": "Mi8Qew4Q/QvlGOeFuU5MwubATT8", "spine": "3.6.52", "width": 355, "height": 437.5, "images": "./images/" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "body", "parent": "root" },
+	{ "name": "hands", "parent": "root" },
+	{ "name": "tail", "parent": "root" }
+],
+"slots": [
+	{ "name": "mask", "bone": "root", "attachment": "mask" },
+	{ "name": "tail light", "bone": "tail", "attachment": "tail light" },
+	{ "name": "tail dark", "bone": "tail", "attachment": "tail dark" },
+	{ "name": "tail outline", "bone": "tail", "attachment": "tail outline" },
+	{ "name": "color head", "bone": "body", "attachment": "color head" },
+	{ "name": "color arms", "bone": "body", "attachment": "color arms" },
+	{ "name": "color jaw", "bone": "body", "attachment": "color jaw" },
+	{ "name": "color ear", "bone": "body", "attachment": "color ear" },
+	{ "name": "nose patch", "bone": "body" },
+	{ "name": "body outline", "bone": "body", "attachment": "body outline" },
+	{ "name": "nose", "bone": "body", "attachment": "nose" },
+	{ "name": "soft brows", "bone": "body", "attachment": "soft brows" },
+	{ "name": "normal brows", "bone": "body", "attachment": "normal brows" },
+	{ "name": "blush", "bone": "body", "attachment": "blush" },
+	{ "name": "closed mouth tounge", "bone": "body" },
+	{ "name": "closed mouth right fang", "bone": "body" },
+	{ "name": "closed mouth left fang", "bone": "body" },
+	{ "name": "closed mouth outline", "bone": "body", "attachment": "closed mouth outline" },
+	{ "name": "open mouth color", "bone": "body" },
+	{ "name": "open mouth right fang", "bone": "body" },
+	{ "name": "open mouth left fang", "bone": "body" },
+	{ "name": "open mouth outline", "bone": "body" },
+	{ "name": "open mouth tounge", "bone": "body" },
+	{ "name": "close eyes color", "bone": "body", "attachment": "close eyes color" },
+	{ "name": "evil eyes color", "bone": "body" },
+	{ "name": "normal eyes color", "bone": "body" },
+	{ "name": "normal eyes glare", "bone": "body" },
+	{ "name": "normal eyes glow", "bone": "body" },
+	{ "name": "bandana color", "bone": "body", "attachment": "bandana color" },
+	{ "name": "bandana dots", "bone": "body", "attachment": "bandana dots" },
+	{ "name": "bandana stripes", "bone": "body", "attachment": "bandana stripes" },
+	{ "name": "bandana outline", "bone": "body", "attachment": "bandana outline" },
+	{ "name": "collar color", "bone": "body", "attachment": "collar color" },
+	{ "name": "collar outline", "bone": "body", "attachment": "collar outline" },
+	{ "name": "tag color", "bone": "body", "attachment": "tag color" },
+	{ "name": "tag outline", "bone": "body", "attachment": "tag outline" },
+	{ "name": "tuff color", "bone": "body", "attachment": "tuff color" },
+	{ "name": "tuff outline", "bone": "body", "attachment": "tuff outline" },
+	{ "name": "cowlick color", "bone": "body", "attachment": "cowlick color" },
+	{ "name": "cowlick outline", "bone": "body", "attachment": "cowlick outline" },
+	{ "name": "leaf color", "bone": "body", "attachment": "leaf color" },
+	{ "name": "leaf outline", "bone": "body", "attachment": "leaf outline" },
+	{ "name": "left up hand dark", "bone": "hands", "attachment": "up hand dark" },
+	{ "name": "right up hand dark", "bone": "hands", "attachment": "up hand dark" },
+	{ "name": "left up hand light", "bone": "hands", "attachment": "up hand light" },
+	{ "name": "right up hand light", "bone": "hands", "attachment": "up hand light" },
+	{ "name": "left up hand paw", "bone": "hands", "attachment": "up hand paw" },
+	{ "name": "right up hand paw", "bone": "hands", "attachment": "up hand paw" },
+	{ "name": "left up hand outline", "bone": "hands", "attachment": "up hand outline" },
+	{ "name": "right up hand outline", "bone": "hands", "attachment": "up hand outline" },
+	{ "name": "mask end", "bone": "root" },
+	{ "name": "left down hand dark", "bone": "hands" },
+	{ "name": "right down hand dark", "bone": "hands" },
+	{ "name": "left down hand light", "bone": "hands" },
+	{ "name": "right down hand light", "bone": "hands" },
+	{ "name": "left down hand outline", "bone": "hands" },
+	{ "name": "right down hand outline", "bone": "hands" }
+],
+"skins": {
+	"default": {
+		"bandana color": {
+			"bandana color": { "x": 0.83, "y": -131.67, "width": 195, "height": 110 }
+		},
+		"bandana dots": {
+			"bandana dots": { "x": -0.67, "y": -129.17, "width": 186, "height": 94 }
+		},
+		"bandana outline": {
+			"bandana outline": { "x": 0.83, "y": -130.67, "width": 204, "height": 120 }
+		},
+		"bandana stripes": {
+			"bandana stripes": { "x": -6.34, "y": -134.96, "width": 160, "height": 93 }
+		},
+		"blush": {
+			"blush": { "x": -6.67, "y": -11.17, "width": 319, "height": 64 }
+		},
+		"body outline": {
+			"body outline": { "x": -1.17, "y": 13.83, "width": 314, "height": 417 }
+		},
+		"close eyes color": {
+			"close eyes color": { "x": -0.84, "y": 27.99, "width": 225, "height": 38 }
+		},
+		"closed mouth left fang": {
+			"closed mouth left fang": { "x": -22.67, "y": -32.17, "width": 24, "height": 25 }
+		},
+		"closed mouth outline": {
+			"closed mouth outline": { "x": 3.33, "y": -11.67, "width": 98, "height": 37 }
+		},
+		"closed mouth right fang": {
+			"closed mouth right fang": { "x": 26.83, "y": -32.17, "width": 24, "height": 25 }
+		},
+		"closed mouth tounge": {
+			"closed mouth tounge": { "x": 4.07, "y": -44.24, "width": 40, "height": 54 }
+		},
+		"collar color": {
+			"collar color": { "x": 1.33, "y": -99.17, "width": 195, "height": 51 }
+		},
+		"collar outline": {
+			"collar outline": { "x": 3.33, "y": -96.67, "width": 204, "height": 61 }
+		},
+		"color arms": {
+			"color arms": { "x": 0.83, "y": -133.17, "width": 238, "height": 133 }
+		},
+		"color ear": {
+			"color ear": { "x": -2.17, "y": 148.83, "width": 273, "height": 108 }
+		},
+		"color head": {
+			"color head": { "x": -1.17, "y": 92.83, "width": 306, "height": 254 }
+		},
+		"color jaw": {
+			"color jaw": { "x": -2.67, "y": -85.67, "width": 295, "height": 220 }
+		},
+		"cowlick color": {
+			"cowlick color": { "x": -0.17, "y": 193.83, "width": 66, "height": 62 }
+		},
+		"cowlick outline": {
+			"cowlick outline": { "x": 0.33, "y": 195.33, "width": 70, "height": 64 }
+		},
+		"evil eyes color": {
+			"evil eyes color": { "x": -0.67, "y": 33.33, "width": 211, "height": 55 }
+		},
+		"leaf color": {
+			"leaf color": { "x": -1.17, "y": 157.33, "width": 88, "height": 107 }
+		},
+		"leaf outline": {
+			"leaf outline": { "x": -0.67, "y": 156.83, "width": 97, "height": 109 }
+		},
+		"left down hand dark": {
+			"down hand dark": { "x": -96.17, "y": -114.67, "width": 72, "height": 45 }
+		},
+		"left down hand light": {
+			"down hand light": { "x": -96.67, "y": -145.17, "width": 77, "height": 85 }
+		},
+		"left down hand outline": {
+			"down hand outline": { "x": -96.17, "y": -140.67, "width": 85, "height": 102 }
+		},
+		"left up hand dark": {
+			"up hand dark": { "x": -94.67, "y": -118.67, "width": 80, "height": 66 }
+		},
+		"left up hand light": {
+			"up hand light": { "x": -95.67, "y": -74.67, "width": 85, "height": 99 }
+		},
+		"left up hand outline": {
+			"up hand outline": { "x": -96.17, "y": -92.17, "width": 91, "height": 138 }
+		},
+		"left up hand paw": {
+			"up hand paw": { "x": -96.17, "y": -68.17, "width": 63, "height": 60 }
+		},
+		"mask": {
+			"mask": {
+				"type": "clipping",
+				"end": "mask end",
+				"vertexCount": 4,
+				"vertices": [ 191.97, -159.92, -192.03, -159.99, -192.08, 288.01, 192.06, 288.05 ],
+				"color": "ce3a3aff"
+			}
+		},
+		"normal brows": {
+			"normal brows": { "x": -3.17, "y": 75.83, "width": 163, "height": 40 }
+		},
+		"normal eyes color": {
+			"normal eyes color": { "x": 0.33, "y": 34.83, "width": 209, "height": 58 }
+		},
+		"normal eyes glare": {
+			"normal eyes glare": { "x": -5.17, "y": 41.33, "width": 176, "height": 26 }
+		},
+		"normal eyes glow": {
+			"normal eyes glow": { "x": 181, "y": -202.5, "width": 194, "height": 44 }
+		},
+		"nose": {
+			"nose": { "x": 1.83, "y": 10.83, "width": 50, "height": 30 }
+		},
+		"nose patch": {
+			"nose patch": { "x": 179.5, "y": -222.5, "width": 73, "height": 29 }
+		},
+		"open mouth color": {
+			"open mouth color": { "x": 1.33, "y": -27.17, "width": 65, "height": 47 }
+		},
+		"open mouth left fang": {
+			"open mouth left fang": { "x": -15.67, "y": -18.17, "width": 21, "height": 23 }
+		},
+		"open mouth outline": {
+			"open mouth outline": { "x": 0.33, "y": -22.67, "width": 89, "height": 61 }
+		},
+		"open mouth right fang": {
+			"open mouth right fang": { "x": 18.83, "y": -18.67, "width": 22, "height": 22 }
+		},
+		"open mouth tounge": {
+			"open mouth tounge": { "x": 2.33, "y": -52.67, "width": 40, "height": 44 }
+		},
+		"right down hand dark": {
+			"down hand dark": { "x": 95.53, "y": -114.67, "width": 72, "height": 45 }
+		},
+		"right down hand light": {
+			"down hand light": { "x": 95.03, "y": -145.17, "width": 77, "height": 85 }
+		},
+		"right down hand outline": {
+			"down hand outline": { "x": 95.53, "y": -140.67, "width": 85, "height": 102 }
+		},
+		"right up hand dark": {
+			"up hand dark": { "x": 97.03, "y": -118.67, "width": 80, "height": 66 }
+		},
+		"right up hand light": {
+			"up hand light": { "x": 96.03, "y": -74.67, "width": 85, "height": 99 }
+		},
+		"right up hand outline": {
+			"up hand outline": { "x": 95.53, "y": -92.17, "width": 91, "height": 138 }
+		},
+		"right up hand paw": {
+			"up hand paw": { "x": 95.53, "y": -68.17, "width": 63, "height": 60 }
+		},
+		"soft brows": {
+			"soft brows": { "x": -1.17, "y": 94.83, "width": 159, "height": 36 }
+		},
+		"tag color": {
+			"tag color": { "x": 3.33, "y": -140.67, "width": 36, "height": 30 }
+		},
+		"tag outline": {
+			"tag outline": { "x": 3.33, "y": -141.17, "width": 41, "height": 35 }
+		},
+		"tail dark": {
+			"tail dark": { "x": 111.33, "y": -113.67, "width": 103, "height": 134 }
+		},
+		"tail light": {
+			"tail light": { "x": 125.33, "y": -100.67, "width": 121, "height": 163 }
+		},
+		"tail outline": {
+			"tail outline": { "x": 122.83, "y": -99.17, "width": 132, "height": 166 }
+		},
+		"tuff color": {
+			"tuff color": { "x": 0.33, "y": 199.83, "width": 306, "height": 69 }
+		},
+		"tuff outline": {
+			"tuff outline": { "x": 0.33, "y": 213.33, "width": 315, "height": 49 }
+		}
+	}
+},
+"events": {
+	"face update": {}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"left down hand dark": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4333, "name": "down hand dark" },
+					{ "time": 4.6667, "name": null }
+				]
+			},
+			"left down hand light": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4333, "name": "down hand light" },
+					{ "time": 4.6667, "name": null }
+				]
+			},
+			"left down hand outline": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4333, "name": "down hand outline" },
+					{ "time": 4.6667, "name": null }
+				]
+			},
+			"left up hand dark": {
+				"attachment": [
+					{ "time": 0, "name": "up hand dark" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand dark" }
+				]
+			},
+			"left up hand light": {
+				"attachment": [
+					{ "time": 0, "name": "up hand light" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand light" }
+				]
+			},
+			"left up hand outline": {
+				"attachment": [
+					{ "time": 0, "name": "up hand outline" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand outline" }
+				]
+			},
+			"left up hand paw": {
+				"attachment": [
+					{ "time": 0, "name": "up hand paw" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand paw" }
+				]
+			},
+			"right down hand dark": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4333, "name": "down hand dark" },
+					{ "time": 4.6667, "name": null }
+				]
+			},
+			"right down hand light": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4333, "name": "down hand light" },
+					{ "time": 4.6667, "name": null }
+				]
+			},
+			"right down hand outline": {
+				"attachment": [
+					{ "time": 0, "name": null },
+					{ "time": 0.4333, "name": "down hand outline" },
+					{ "time": 4.6667, "name": null }
+				]
+			},
+			"right up hand dark": {
+				"attachment": [
+					{ "time": 0, "name": "up hand dark" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand dark" }
+				]
+			},
+			"right up hand light": {
+				"attachment": [
+					{ "time": 0, "name": "up hand light" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand light" }
+				]
+			},
+			"right up hand outline": {
+				"attachment": [
+					{ "time": 0, "name": "up hand outline" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand outline" }
+				]
+			},
+			"right up hand paw": {
+				"attachment": [
+					{ "time": 0, "name": "up hand paw" },
+					{ "time": 0.4333, "name": null },
+					{ "time": 4.6667, "name": "up hand paw" }
+				]
+			}
+		},
+		"bones": {
+			"tail": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -402.73 },
+					{ "time": 0.4, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4.6667, "x": 0, "y": 0 },
+					{ "time": 5, "x": 0, "y": -401.31 }
+				]
+			},
+			"body": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -402.73 },
+					{ "time": 0.4, "x": 0, "y": 0 },
+					{ "time": 0.5667, "x": 0, "y": 24.74 },
+					{ "time": 0.7333, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4.6667, "x": 0, "y": 0 },
+					{ "time": 5, "x": 0, "y": -401.31 }
+				]
+			},
+			"hands": {
+				"translate": [
+					{ "time": 0, "x": 0, "y": -402.73 },
+					{ "time": 0.4, "x": 0, "y": 0, "curve": "stepped" },
+					{ "time": 4.6667, "x": 0, "y": 0 },
+					{ "time": 5, "x": 0, "y": -401.31 }
+				]
+			}
+		},
+		"events": [
+			{ "time": 0.5667, "name": "face update", "int": 1 }
+		]
+	}
+}
+}

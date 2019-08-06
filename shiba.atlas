@@ -1,0 +1,342 @@
+
+shibaspine7_composite.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bandana color
+  rotate: false
+  xy: 615, 790
+  size: 195, 110
+  orig: 195, 110
+  offset: 0, 0
+  index: -1
+bandana dots
+  rotate: false
+  xy: 318, 596
+  size: 186, 94
+  orig: 186, 94
+  offset: 0, 0
+  index: -1
+bandana outline
+  rotate: false
+  xy: 68, 92
+  size: 204, 120
+  orig: 204, 120
+  offset: 0, 0
+  index: -1
+bandana stripes
+  rotate: false
+  xy: 274, 98
+  size: 160, 93
+  orig: 160, 93
+  offset: 0, 0
+  index: -1
+blush
+  rotate: true
+  xy: 2, 28
+  size: 319, 64
+  orig: 319, 64
+  offset: 0, 0
+  index: -1
+body outline
+  rotate: false
+  xy: 2, 605
+  size: 314, 417
+  orig: 314, 417
+  offset: 0, 0
+  index: -1
+close eyes color
+  rotate: false
+  xy: 593, 690
+  size: 225, 38
+  orig: 225, 38
+  offset: 0, 0
+  index: -1
+closed mouth left fang
+  rotate: true
+  xy: 2, 2
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+closed mouth right fang
+  rotate: true
+  xy: 2, 2
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+closed mouth outline
+  rotate: false
+  xy: 507, 387
+  size: 98, 37
+  orig: 98, 37
+  offset: 0, 0
+  index: -1
+closed mouth tounge
+  rotate: false
+  xy: 413, 272
+  size: 40, 54
+  orig: 40, 54
+  offset: 0, 0
+  index: -1
+collar color
+  rotate: false
+  xy: 507, 580
+  size: 195, 51
+  orig: 195, 51
+  offset: 0, 0
+  index: -1
+collar outline
+  rotate: true
+  xy: 444, 390
+  size: 204, 61
+  orig: 204, 61
+  offset: 0, 0
+  index: -1
+color arms
+  rotate: false
+  xy: 68, 214
+  size: 238, 133
+  orig: 238, 133
+  offset: 0, 0
+  index: -1
+color ear
+  rotate: false
+  xy: 318, 692
+  size: 273, 108
+  orig: 273, 108
+  offset: 0, 0
+  index: -1
+color head
+  rotate: false
+  xy: 2, 349
+  size: 306, 254
+  orig: 306, 254
+  offset: 0, 0
+  index: -1
+color jaw
+  rotate: false
+  xy: 318, 802
+  size: 295, 220
+  orig: 295, 220
+  offset: 0, 0
+  index: -1
+cowlick color
+  rotate: true
+  xy: 935, 774
+  size: 66, 62
+  orig: 66, 62
+  offset: 0, 0
+  index: -1
+cowlick outline
+  rotate: true
+  xy: 935, 842
+  size: 70, 64
+  orig: 70, 64
+  offset: 0, 0
+  index: -1
+down hand dark
+  rotate: false
+  xy: 932, 914
+  size: 72, 45
+  orig: 72, 45
+  offset: 0, 0
+  index: -1
+down hand light
+  rotate: false
+  xy: 820, 650
+  size: 77, 85
+  orig: 77, 85
+  offset: 0, 0
+  index: -1
+down hand outline
+  rotate: true
+  xy: 177, 5
+  size: 85, 102
+  orig: 85, 102
+  offset: 0, 0
+  index: -1
+evil eyes color
+  rotate: false
+  xy: 506, 633
+  size: 211, 55
+  orig: 211, 55
+  offset: 0, 0
+  index: -1
+leaf color
+  rotate: true
+  xy: 68, 2
+  size: 88, 107
+  orig: 88, 107
+  offset: 0, 0
+  index: -1
+leaf outline
+  rotate: true
+  xy: 310, 329
+  size: 97, 109
+  orig: 97, 109
+  offset: 0, 0
+  index: -1
+normal brows
+  rotate: false
+  xy: 507, 492
+  size: 163, 40
+  orig: 163, 40
+  offset: 0, 0
+  index: -1
+normal eyes color
+  rotate: false
+  xy: 593, 730
+  size: 209, 58
+  orig: 209, 58
+  offset: 0, 0
+  index: -1
+normal eyes glare
+  rotate: false
+  xy: 507, 426
+  size: 176, 26
+  orig: 176, 26
+  offset: 0, 0
+  index: -1
+normal eyes glow
+  rotate: false
+  xy: 507, 534
+  size: 194, 44
+  orig: 194, 44
+  offset: 0, 0
+  index: -1
+nose
+  rotate: true
+  xy: 413, 220
+  size: 50, 30
+  orig: 50, 30
+  offset: 0, 0
+  index: -1
+nose patch
+  rotate: false
+  xy: 607, 395
+  size: 73, 29
+  orig: 73, 29
+  offset: 0, 0
+  index: -1
+open mouth color
+  rotate: true
+  xy: 899, 670
+  size: 65, 47
+  orig: 65, 47
+  offset: 0, 0
+  index: -1
+open mouth left fang
+  rotate: false
+  xy: 421, 403
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+open mouth outline
+  rotate: false
+  xy: 923, 961
+  size: 89, 61
+  orig: 89, 61
+  offset: 0, 0
+  index: -1
+open mouth right fang
+  rotate: false
+  xy: 948, 713
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+open mouth tounge
+  rotate: true
+  xy: 978, 732
+  size: 40, 44
+  orig: 40, 44
+  offset: 0, 0
+  index: -1
+soft brows
+  rotate: false
+  xy: 507, 454
+  size: 159, 36
+  orig: 159, 36
+  offset: 0, 0
+  index: -1
+tag color
+  rotate: true
+  xy: 672, 496
+  size: 36, 30
+  orig: 36, 30
+  offset: 0, 0
+  index: -1
+tag outline
+  rotate: false
+  xy: 935, 737
+  size: 41, 35
+  orig: 41, 35
+  offset: 0, 0
+  index: -1
+tail dark
+  rotate: false
+  xy: 308, 193
+  size: 103, 134
+  orig: 103, 134
+  offset: 0, 0
+  index: -1
+tail light
+  rotate: false
+  xy: 812, 737
+  size: 121, 163
+  orig: 121, 163
+  offset: 0, 0
+  index: -1
+tail outline
+  rotate: false
+  xy: 310, 428
+  size: 132, 166
+  orig: 132, 166
+  offset: 0, 0
+  index: -1
+tuff color
+  rotate: false
+  xy: 615, 953
+  size: 306, 69
+  orig: 306, 69
+  offset: 0, 0
+  index: -1
+tuff outline
+  rotate: false
+  xy: 615, 902
+  size: 315, 49
+  orig: 315, 49
+  offset: 0, 0
+  index: -1
+up hand dark
+  rotate: false
+  xy: 820, 582
+  size: 80, 66
+  orig: 80, 66
+  offset: 0, 0
+  index: -1
+up hand light
+  rotate: true
+  xy: 719, 603
+  size: 85, 99
+  orig: 85, 99
+  offset: 0, 0
+  index: -1
+up hand outline
+  rotate: true
+  xy: 281, 5
+  size: 91, 138
+  orig: 91, 138
+  offset: 0, 0
+  index: -1
+up hand paw
+  rotate: false
+  xy: 421, 328
+  size: 63, 60
+  orig: 63, 60
+  offset: 0, 0
+  index: -1
