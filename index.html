@@ -180,9 +180,9 @@ function storeRandomizeSlots() {
 }
 
 function applyRandomizedSlots() {
-	for (let [key, value] of Object.entries(randomSlots)) {
-		slotOn(key, value);
-	}
+	Object.keys(randomSlots).forEach(function(key) {
+		slotOn(key, randomSlots[key])
+	});
 }
 
 function closeEyesAndMouth() {
