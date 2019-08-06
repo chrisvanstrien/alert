@@ -226,10 +226,10 @@ function randomizeColors() {
 	];
 	
 	var furPalettes = [
-		{primary:{r:244/255, g:198/255, b:120/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}, detail:{r:0/255, g:0/255, b:0/255, a:1}},
-		{primary:{r:133/255, g:84/255, b:80/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}, detail:{r:226/255, g:175/255, b:118/255, a:1}},
-		{primary:{r:206/255, g:217/255, b:225/255, a:1}, secondary:{r:248/255, g:248/255, b:248/255, a:1}, detail:{r:176/255, g:185/255, b:192/255, a:1}},
-		{primary:{r:231/255, g:180/255, b:228/255, a:1}, secondary:{r:248/255, g:248/255, b:248/255, a:1}, detail:{r:0/255, g:0/255, b:0/255, a:1}}
+		{primary:{r:244/255, g:198/255, b:120/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}, detail:{r:0/255, g:0/255, b:0/255, a:1}}, // normal
+		{primary:{r:133/255, g:84/255, b:80/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}, detail:{r:226/255, g:175/255, b:118/255, a:1}}, // dark
+		{primary:{r:206/255, g:217/255, b:225/255, a:1}, secondary:{r:248/255, g:248/255, b:248/255, a:1}, detail:{r:176/255, g:185/255, b:192/255, a:1}}, // silver
+		{primary:{r:231/255, g:180/255, b:228/255, a:1}, secondary:{r:248/255, g:248/255, b:248/255, a:1}, detail:{r:0/255, g:0/255, b:0/255, a:1}} // pink
 	];
 	
 	var furSlots = {
@@ -257,17 +257,17 @@ function randomizeColors() {
 		]
 	}
 	
-	var leafPaletteIndex = Math.floor(Math.random() * 2);
+	var leafPaletteIndex = Math.floor(Math.random() * leafColors.length);
 	mainSkeleton.skeleton.findSlot("leaf color").color = leafColors[leafPaletteIndex];
 	
-	var neckPaletteIndex = Math.floor(Math.random() * 5);
+	var neckPaletteIndex = Math.floor(Math.random() * neckColors.length);
 	mainSkeleton.skeleton.findSlot("collar color").color = neckColors[neckPaletteIndex];
 	mainSkeleton.skeleton.findSlot("bandana color").color = neckColors[neckPaletteIndex];
 	
-	var tagPaletteIndex = Math.floor(Math.random() * 2); 
+	var tagPaletteIndex = Math.floor(Math.random() * tagColors.length); 
 	mainSkeleton.skeleton.findSlot("tag color").color = tagColors[tagPaletteIndex];
 
-	var furPaletteIndex = Math.floor(Math.random() * 4); 
+	var furPaletteIndex = Math.floor(Math.random() * furPalettes.length); 
 	slotOn("nose patch", furPaletteIndex == 1 || furPaletteIndex == 2);
 	
 	mainSkeleton.skeleton.findSlot("nose patch").color = furPalettes[furPaletteIndex].detail;
