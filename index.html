@@ -267,6 +267,8 @@ function randomizeColors() {
 	var tagPaletteIndex = Math.floor(Math.random() * tagColors.length); 
 	mainSkeleton.skeleton.findSlot("tag color").color = tagColors[tagPaletteIndex];
 	
+	var value = Math.random();
+	var furPaletteIndex = value < 0.6 ? 0 : (value < 0.8 ? 1 : (value < 0.95 ? 2 : 3));
 	var furPaletteIndex = function() {
 		var value = Math.random();
 		if (value < 0.6) { return 0 }
