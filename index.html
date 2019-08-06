@@ -118,14 +118,14 @@ function storeRandomizeSlots() {
 	
 	var bandanaType = randSelect(["dots", "stripes"]);
 	
-	var blush = randSelect([false, false, false, true]);
+	var blush = randSelect([false, false, false, false, true]);
 	
 	var eyeType = randSelect(["glow", "glow", "glow", "evil", "normal", "normal", "normal", "normal", "normal"]);
 	
 	var mouthOpen = randBool();
-	var leftFang = randSelect([false, false, false, false, true]);
-	var rightFang = randSelect([false, false, false, false, true]);
-	var tounge = randSelect([false, false, false, false, true]);
+	var leftFang = randSelect([false, false, false, false, false, false, false, true]);
+	var rightFang = randSelect([false, false, false, false, false, false, false, true]);
+	var tounge = randSelect([false, false, false, false, false, true]);
 	
 	var tuff = randSelect([false, false, false, true]);
 	
@@ -268,7 +268,7 @@ function randomizeColors() {
 	mainSkeleton.skeleton.findSlot("tag color").color = tagColors[tagPaletteIndex];
 
 	var furPaletteIndex = Math.floor(Math.random() * furPalettes.length); 
-	slotOn("nose patch", furPaletteIndex == 1 || furPaletteIndex == 2);
+	slotOn("nose patch", furPaletteIndex == 1 || furPaletteIndex == 2); // use alpha instead?
 	
 	mainSkeleton.skeleton.findSlot("nose patch").color = furPalettes[furPaletteIndex].detail;
 	
