@@ -268,7 +268,7 @@ function randomizeColors() {
 	mainSkeleton.skeleton.findSlot("tag color").color = tagColors[tagPaletteIndex];
 	
 	var value = Math.random();
-	var furPaletteIndex = value < 0.6 ? 0 : (value < 0.8 ? 1 : (value < 0.95 ? 2 : 3));
+	var furPaletteIndex = value < 0.75 ? 0 : (value < 0.875 ? 1 : (value < 0.975 ? 2 : 3));
 	
 	slotOn("nose patch", furPaletteIndex == 1 || furPaletteIndex == 2); // use alpha instead?
 	
