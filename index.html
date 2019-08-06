@@ -194,7 +194,7 @@ function closeEyesAndMouth() {
 	slotOn("normal eyes glow", false);
 	
 	slotOn("close eyes color", true);
-	mainSkeleton.skeleton.findSlot("close eyes color").setAttachment("close eyes color");
+	//mainSkeleton.skeleton.findSlot("close eyes color").setAttachment("close eyes color");
 	
 	
 	slotOn("open mouth tounge", false);
@@ -204,7 +204,7 @@ function closeEyesAndMouth() {
 	slotOn("open mouth color", false);
 
 	slotOn("closed mouth outline", true);
-	mainSkeleton.skeleton.findSlot("closed mouth outline").setAttachment("closed mouth outline");
+	//mainSkeleton.skeleton.findSlot("closed mouth outline").setAttachment("closed mouth outline");
 }
 
 function randomizeColors() { // set nose patch visibility here, randomize non-fur
@@ -254,7 +254,7 @@ function randomizeColors() { // set nose patch visibility here, randomize non-fu
 }
 
 function slotOn(slot, on) {
-	mainSkeleton.skeleton.findSlot(slot).setAttachment(on == true ? slot : null);
+	mainSkeleton.skeleton.setAttachment(slot, on ? slot : null);
 }
 
 function calculateBounds(skeleton) {
