@@ -114,28 +114,40 @@ function animationEvent(name) { // "still" is actually just whenever the dogs ey
 	applyRandomizedSlots();
 }
 
+function randSelect(array) {
+	return array[Math.floor(Math.random() * array.length)];
+}
+
+function randBool() { // is this needed lmao
+	return Math.random() == 0 ? false : true;
+}
+
 function storeRandomizeSlots() {
-	var bandana = true;
-	var bandanaType = "dots";
+	var neck = randSelect(["bandana", "collar", "normal"]);
+
+	var head = randSelect(["cowlick", "leaf", "normal"]);
 	
-	var blush = true;
+	var bandana = neck == "bandana";
+	var bandanaType = randSelect(["dots", "stripes"]);
 	
-	var eyeType = "glow";
+	var blush = randBool();
 	
-	var mouthOpen = true;
-	var leftFang = true;
-	var rightFang = true
-	var tounge = true;
+	var eyeType = randSelect(["glow", "evil", "normal"]);
 	
-	var collar = false;
+	var mouthOpen = randBool();
+	var leftFang = randBool();
+	var rightFang = randBool()
+	var tounge = randBool();
 	
-	var cowlick = false;
+	var collar = neck == "collar";
 	
-	var leaf = true;
+	var cowlick = head == "cowlick";
 	
-	var tuff = true;
+	var leaf = head == "leaf";
 	
-	var browType = "soft";
+	var tuff = randBool();
+	
+	var browType = randSelect(["soft", "normal"]);
 
 	randomSlots = {
 		"bandana color": bandana,
