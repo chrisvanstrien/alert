@@ -114,34 +114,96 @@ function animationEvent(name) { // "still" is actually just whenever the dogs ey
 }
 
 function storeRandomizeSlots() {
-	// how to do this? list all the ones that are on, then deactivate them all besides the stored ones.
+	var bandana = true;
+	var bandanaType = "dots";
+	
+	var blush = true;
+	
+	var eyeType = "glow";
+	
+	var mouthOpen = true;
+	var leftFang = true;
+	var rightFang = true
+	var tounge = true;
+	
+	var collar = false;
+	
+	var cowlick = false;
+	
+	var leaf = true;
+	
+	var tuff = true;
+	
+	var browType = "soft";
+
+	randomSlots = {
+		"bandana color": bandana,
+		"bandana outline": bandana,
+		"bandana dots": bandana && bandanaType === "dots",
+		"bandana stripes": bandana && bandanaType === "stripes",
+		
+		"blush": blush,
+		
+		"close eyes color": eyeType === "close",
+		"evil eyes color": eyeType === "evil",
+		"normal eyes color": eyeType === "normal" || eyeType === "glow",
+		"normal eyes glare": eyeType === "normal",
+		"normal eyes glow": eyeType === "glow",
+		
+		"closed mouth left fang": !mouthOpen && leftFang,
+		"closed mouth outline": !mouthOpen,
+		"closed mouth right fang": !mouthOpen && rightFang,
+		"closed mouth tounge": !mouthOpen && tounge,
+		"open mouth color": mouthOpen,
+		"open mouth left fang": mouthOpen && leftFang,
+		"open mouth outline": mouthOpen,
+		"open mouth right fang": mouthOpen && rightFang,
+		"open mouth tounge": mouthOpen && tounge,
+		
+		"collar color": collar,
+		"collar outline": collar,
+		"tag color": collar,
+		"tag outline": collar,
+		
+		"cowlick color": cowlick,
+		"cowlick outline": cowlick,
+		
+		"leaf color": leaf,
+		"leaf outline": leaf,
+		
+		"normal brows": browType === "normal",
+		"soft brows": browType === "soft",
+		
+		"tuff color": tuff,
+		"tuff outline": tuff
+	}
 }
 
 function applyRandomizedSlots() {
-
+	for (let [key, value] of Object.entries(randomSlots)) {
+		slotOn(key, value);
+	}
 }
 
 function closeEyesAndMouth() {
-	mainSkeleton.skeleton.findSlot("evil eyes color").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("normal eyes color").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("normal eyes glare").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("normal eyes glow").setAttachment(null);
+	slotOn("evil eyes color", false);
+	slotOn("normal eyes color", false);
+	slotOn("normal eyes glare", false);
+	slotOn("normal eyes glow", false);
 	
-	mainSkeleton.skeleton.findSlot("close eyes color").setAttachment("close eyes color");
+	slotOn("close eyes color", true);
 	
 	
-	mainSkeleton.skeleton.findSlot("open mouth tounge").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("open mouth outline").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("open mouth right fang").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("open mouth left fang").setAttachment(null);
-	mainSkeleton.skeleton.findSlot("open mouth color").setAttachment(null);
-	
-	mainSkeleton.skeleton.findSlot("closed mouth outline").setAttachment("closed mouth outline");
+	slotOn("open mouth tounge", false);
+	slotOn("open mouth outline", false);
+	slotOn("open mouth right fang", false);
+	slotOn("open mouth left fang", false);
+	slotOn("open mouth color", false);
+
+	slotOn("closed mouth outline", true);
 }
 
-function randomizeColors() {
-	console.log("randomizeColors");
-
+function randomizeColors() { // set nose patch visibility here, randomize non-fur
 	var furPalettes = [
 		{primary:{r:244/255, g:198/255, b:120/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}},
 		{primary:{r:133/255, g:84/255, b:80/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}},
@@ -185,6 +247,10 @@ function randomizeColors() {
 	});
 	
 	// call on animation start
+}
+
+function slotOn(slot, on) {
+	mainSkeleton.skeleton.findSlot(slot).setAttachment(on ? slot : null);
 }
 
 function calculateBounds(skeleton) {
