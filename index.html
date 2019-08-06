@@ -140,11 +140,11 @@ function randomizeColors() {
 	
 	// cant use attachment, because it might be swapped out?
 	furSlots.primary.forEach(function(element) {
-		//mainSkeleton.skeleton.findSlot(element).color = {r:1, g:1, b:1, a:1} //furPalettes[furPaletteIndex].primary;
+		mainSkeleton.skeleton.findSlot(element).color = furPalettes[furPaletteIndex].primary;
 	});
 	
 	furSlots.secondary.forEach(function(element) {
-		//mainSkeleton.skeleton.findSlot(element).color = {r:1, g:1, b:1, a:1} //furPalettes[furPaletteIndex].secondary;
+		mainSkeleton.skeleton.findSlot(element).color = furPalettes[furPaletteIndex].secondary;
 	});
 	
 	// call on animation start
