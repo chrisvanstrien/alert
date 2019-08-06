@@ -251,7 +251,7 @@ function randomizeColors() { // set nose patch visibility here, randomize non-fu
 }
 
 function slotOn(slot, on) {
-	mainSkeleton.skeleton.findSlot(slot).setAttachment(on ? slot : null);
+	mainSkeleton.skeleton.findSlot(slot).setAttachment(on == true ? slot : null);
 }
 
 function calculateBounds(skeleton) {
