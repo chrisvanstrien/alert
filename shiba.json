@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "Mi8Qew4Q/QvlGOeFuU5MwubATT8", "spine": "3.6.52", "width": 355, "height": 437.5, "images": "./images/" },
+"skeleton": { "hash": "bP2tzal/3AutAvUkI7ZGUg2J7rg", "spine": "3.6.52", "width": 355, "height": 437.5, "images": "./images/" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "body", "parent": "root" },
@@ -15,7 +15,7 @@
 	{ "name": "color arms", "bone": "body", "attachment": "color arms" },
 	{ "name": "color jaw", "bone": "body", "attachment": "color jaw" },
 	{ "name": "color ear", "bone": "body", "attachment": "color ear" },
-	{ "name": "nose patch", "bone": "body" },
+	{ "name": "nose patch", "bone": "body", "attachment": "nose patch" },
 	{ "name": "body outline", "bone": "body", "attachment": "body outline" },
 	{ "name": "nose", "bone": "body", "attachment": "nose" },
 	{ "name": "soft brows", "bone": "body", "attachment": "soft brows" },
@@ -179,7 +179,7 @@
 			"nose": { "x": 1.83, "y": 10.83, "width": 50, "height": 30 }
 		},
 		"nose patch": {
-			"nose patch": { "x": 179.5, "y": -222.5, "width": 73, "height": 29 }
+			"nose patch": { "x": 0.86, "y": 19.5, "width": 73, "height": 29 }
 		},
 		"open mouth color": {
 			"open mouth color": { "x": 1.33, "y": -27.17, "width": 65, "height": 47 }
