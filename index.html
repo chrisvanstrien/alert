@@ -97,20 +97,8 @@ function loadSkeleton(initialAnimation, skin) {
 	return { skeleton: skeleton, state: animationState, bounds: bounds};
 }
 
-// call applyRandomizedSlots?
-function animationEvent(name) { // "still" is actually just whenever the dogs eyes open
-	// have a dict for slots listing all the possible options, in rise still sets, including [null, null] if applicable 
-	// take one of those for each key and move it to generated one, the currently selected rng combo
-	// or can store an index into the dict of all possible, but thats a lot of indices to have
-
-	// check if its rising start, standing start
-	
-	// {slotName: [attachmentNameRise, attachmentNameStill]}
-			
-	// iterate KEYs in this DICT:
-	// skeleton.findSlot("KEY").setAttachment(DICT[KEY][name == RISING ? 0 : 1]) //just set attachment with first arg slot name?
-	
-	// check for one?
+function animationEvent(name) {
+	// check for event type?
 	applyRandomizedSlots();
 }
 
@@ -123,6 +111,9 @@ function randBool() { // is this needed lmao
 }
 
 function storeRandomizeSlots() {
+
+	// have some things more rare than others
+
 	var neck = randSelect(["bandana", "collar", "normal"]);
 
 	var head = randSelect(["cowlick", "leaf", "normal"]);
@@ -216,7 +207,12 @@ function closeEyesAndMouth() {
 	slotOn("closed mouth outline", true);
 }
 
-function randomizeColors() { // set nose patch visibility here, randomize non-fur
+function randomizeColors() {
+	
+	// have some colors more rare than others
+	// set nose patch visibility here, randomize non-fur
+	// have some variance in fur colors
+	
 	var furPalettes = [
 		{primary:{r:244/255, g:198/255, b:120/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}},
 		{primary:{r:133/255, g:84/255, b:80/255, a:1}, secondary:{r:248/255, g:241/255, b:231/255, a:1}},
