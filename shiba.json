@@ -1,5 +1,5 @@
 {
-"skeleton": { "hash": "bP2tzal/3AutAvUkI7ZGUg2J7rg", "spine": "3.6.52", "width": 355, "height": 437.5, "images": "./images/" },
+"skeleton": { "hash": "Y/wJsHhT66y2soK9HR1OmqBCtfs", "spine": "3.6.52", "width": 355, "height": 437.5, "images": "./images/" },
 "bones": [
 	{ "name": "root" },
 	{ "name": "body", "parent": "root" },
@@ -32,9 +32,9 @@
 	{ "name": "open mouth tounge", "bone": "body" },
 	{ "name": "close eyes color", "bone": "body", "attachment": "close eyes color" },
 	{ "name": "evil eyes color", "bone": "body" },
-	{ "name": "normal eyes color", "bone": "body" },
+	{ "name": "normal eyes color", "bone": "body", "attachment": "normal eyes color" },
 	{ "name": "normal eyes glare", "bone": "body" },
-	{ "name": "normal eyes glow", "bone": "body" },
+	{ "name": "normal eyes glow", "bone": "body", "attachment": "normal eyes glow" },
 	{ "name": "bandana color", "bone": "body", "attachment": "bandana color" },
 	{ "name": "bandana dots", "bone": "body", "attachment": "bandana dots" },
 	{ "name": "bandana stripes", "bone": "body", "attachment": "bandana stripes" },
@@ -173,7 +173,7 @@
 			"normal eyes glare": { "x": -5.17, "y": 41.33, "width": 176, "height": 26 }
 		},
 		"normal eyes glow": {
-			"normal eyes glow": { "x": 181, "y": -202.5, "width": 194, "height": 44 }
+			"normal eyes glow": { "x": 0.93, "y": 34.92, "width": 194, "height": 44 }
 		},
 		"nose": {
 			"nose": { "x": 1.83, "y": 10.83, "width": 50, "height": 30 }
