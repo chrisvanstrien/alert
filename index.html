@@ -5,7 +5,7 @@
 <style>
 	* { margin: 0; padding: 0; }
 	body, html { height: 100% background-color: rgba(0, 0, 0, 0);}
-	canvas { position: absolute; width: 100% ;height: 100%; background-color: rgba(0, 0, 0, 0);}
+	canvas { position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0);}
 </style>
 
 <body>
@@ -28,7 +28,7 @@ function init() {
 	canvas = document.getElementById("canvas");
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
-	var config = { alpha: false };
+	var config = { alpha: true };
 	gl = canvas.getContext("webgl", config) || canvas.getContext("experimental-webgl", config);
 	
 	if (!gl) { console.log("WebGL is required and not supported."); return; }
