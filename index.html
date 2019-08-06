@@ -181,7 +181,7 @@ function storeRandomizeSlots() {
 
 function applyRandomizedSlots() {
 	Object.keys(randomSlots).forEach(function(key) {
-		slotOn(key, randomSlots[key])
+		slotOn(key, randomSlots.key);
 	});
 }
 
