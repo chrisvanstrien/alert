@@ -51,8 +51,8 @@ function load() {
 		mainSkeleton = loadSkeleton("animation");
 		
 		randomizeColors();
-		storeRandomizeSlots();
-		applyRandomizedSlots();
+		//storeRandomizeSlots();
+		//applyRandomizedSlots();
 		closeEyesAndMouth();
 		
 		requestAnimationFrame(render);
@@ -85,8 +85,8 @@ function loadSkeleton(initialAnimation, skin) {
 		disposed: function(track) {},
 		complete: function(track) {
 			randomizeColors();
-			storeRandomizeSlots();
-			applyRandomizedSlots();
+			//storeRandomizeSlots();
+			//applyRandomizedSlots();
 			closeEyesAndMouth();
 		},
 		event: function(track, event) {
