@@ -269,13 +269,6 @@ function randomizeColors() {
 	
 	var value = Math.random();
 	var furPaletteIndex = value < 0.6 ? 0 : (value < 0.8 ? 1 : (value < 0.95 ? 2 : 3));
-	var furPaletteIndex = function() {
-		var value = Math.random();
-		if (value < 0.6) { return 0 }
-		if (value < 0.8) { return 1 }
-		if (value < 0.95) { return 2 }
-		return 3;
-	}()
 	
 	slotOn("nose patch", furPaletteIndex == 1 || furPaletteIndex == 2); // use alpha instead?
 	
