@@ -112,34 +112,30 @@ function randBool() { // is this needed lmao
 
 function storeRandomizeSlots() {
 
-	// have some things more rare than others
+	var neck = randSelect(["bandana", "collar", "normal", "normal", "normal"]);
 
-	var neck = randSelect(["bandana", "collar", "normal"]);
-
-	var head = randSelect(["cowlick", "leaf", "normal"]);
+	var head = randSelect(["cowlick", "cowlick", "leaf", "normal", "normal", "normal", "normal"]);
 	
-	var bandana = neck == "bandana";
 	var bandanaType = randSelect(["dots", "stripes"]);
 	
-	var blush = randBool();
+	var blush = randSelect([false, false, false, true]);
 	
-	var eyeType = randSelect(["glow", "evil", "normal"]);
+	var eyeType = randSelect(["glow", "glow", "glow" "evil", "normal", "normal", "normal", "normal", "normal", "normal"]);
 	
 	var mouthOpen = randBool();
-	var leftFang = randBool();
-	var rightFang = randBool()
-	var tounge = randBool();
+	var leftFang = randSelect([false, false, false, false, true]);
+	var rightFang = randSelect([false, false, false, false, true]);
+	var tounge = randSelect([false, false, false, false, true]);
 	
-	var collar = neck == "collar";
-	
-	var cowlick = head == "cowlick";
-	
-	var leaf = head == "leaf";
-	
-	var tuff = randBool();
+	var tuff = randSelect([false, false, false, true]);
 	
 	var browType = randSelect(["soft", "normal"]);
 
+	var cowlick = head == "cowlick";
+	var leaf = head == "leaf";
+	var bandana = neck == "bandana";
+	var collar = neck == "collar";
+	
 	randomSlots = {
 		"bandana color": bandana,
 		"bandana outline": bandana,
@@ -305,7 +301,7 @@ function render() {
 
 	resize();
 
-	gl.clearColor(0, 0, 0, 0); // clear to transparent
+	gl.clearColor(0, 0, 0, 0);
 	gl.clear(gl.COLOR_BUFFER_BIT);
 
 	var state = mainSkeleton.state;
