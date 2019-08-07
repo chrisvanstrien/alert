@@ -76,7 +76,7 @@ function loadSkeleton(initialAnimation, skin) {
 
 	var animationStateData = new spine.AnimationStateData(skeleton.data);
 	var animationState = new spine.AnimationState(animationStateData);
-	//animationState.setAnimation(0, initialAnimation, true); // true is loop
+	animationState.setAnimation(0, initialAnimation, true); // true is loop
 
 	animationState.addListener({
 		start: function(track) {},
@@ -303,7 +303,7 @@ function render() {
 
 	resize();
 
-	gl.clearColor(0, 0, 0, 0);
+	gl.clearColor(206/255, 239/255, 239/255, 1);
 	gl.clear(gl.COLOR_BUFFER_BIT);
 
 	var state = mainSkeleton.state;
