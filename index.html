@@ -76,19 +76,14 @@ function loadSkeleton(initialAnimation, skin) {
 
 	var animationStateData = new spine.AnimationStateData(skeleton.data);
 	var animationState = new spine.AnimationState(animationStateData);
-	//animationState.setAnimation(0, initialAnimation, true); // true is loop
+	animationState.setAnimation(0, initialAnimation, false); // true is loop
 
 	animationState.addListener({
 		start: function(track) {},
 		interrupt: function(track) {},
 		end: function(track) {},
 		disposed: function(track) {},
-		complete: function(track) {
-			randomizeColors();
-			storeRandomizeSlots();
-			applyRandomizedSlots();
-			closeEyesAndMouth();
-		},
+		complete: function(track) {},
 		event: function(track, event) {
 			animationEvent(event.name);
 		}
