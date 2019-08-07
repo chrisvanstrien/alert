@@ -43,7 +43,9 @@ function init() {
 	assetManager.loadText("/alert/shiba.json");
 	assetManager.loadTextureAtlas("/alert/shiba.atlas");
 	
-	requestAnimationFrame(load);
+	setTimeout(function() {
+		requestAnimationFrame(load);
+	}, 2000);
 }
 
 function load() {
