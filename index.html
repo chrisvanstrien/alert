@@ -14,7 +14,7 @@
 
 <script>
 
-var lastFrameTime = Date.now() / 1000;
+var lastFrameTime;
 var canvas;
 var shader;
 var batcher;
@@ -44,8 +44,8 @@ function init() {
 	assetManager.loadTextureAtlas("/alert/shiba.atlas");
 	
 	setTimeout(function() {
-		load();
-	}, 2000);
+		requestAnimationFrame(load);
+	}, 1000);
 }
 
 function load() {
@@ -79,6 +79,8 @@ function loadSkeleton(initialAnimation, skin) {
 	var animationStateData = new spine.AnimationStateData(skeleton.data);
 	var animationState = new spine.AnimationState(animationStateData);
 	animationState.setAnimation(0, initialAnimation, false); // true is loop
+	
+	lastFrameTime = Date.now() / 1000;
 
 	animationState.addListener({
 		start: function(track) {},
